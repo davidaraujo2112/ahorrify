@@ -1,0 +1,60 @@
+name: ahorrify
+
+description: "Una aplicación de finanzas personales para ayudarte a ahorrar y gestionar tu dinero."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+
+dependencies:
+  flutter:
+    sdk: flutter
+  provider: ^6.1.1
+  sqflite: ^2.3.2
+  path_provider: ^2.1.2
+  intl: ^0.19.0
+  fl_chart: ^0.64.0
+  shared_preferences: ^2.2.2
+  flutter_localizations:
+    sdk: flutter
+  file_picker: ^10.1.9
+  permission_handler: ^12.0.0+1
+  cupertino_icons: ^1.0.8
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^5.0.0
+  flutter_launcher_icons: ^0.13.1
+  flutter_native_splash: ^2.3.10
+
+flutter_icons:
+  android: true
+  ios: true
+  image_path: "assets/icons/app_icon.png"
+
+flutter_native_splash:
+  color: "#ffffff"
+  image: assets/splash/splash.png
+  android: true
+  ios: true
+  android_gravity: center
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/logo.png
+    - assets/icons/
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/Poppins-Regular.ttf
+        - asset: assets/fonts/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/Poppins-Bold.ttf
+          weight: 700
